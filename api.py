@@ -1,5 +1,7 @@
 import json
 from pprint import pprint
+import numpy as np
+import matplotlib.pyplot as plt
 print('''
  (   (       )        (     
  )\ ))\ ) ( /(   *   ))\ )  
@@ -32,3 +34,27 @@ jsonData = json.dumps(data_item, sort_keys=True, indent=5)
     #print json.dumps(data_item, sort_keys=True, indent=5)
     data = json.loads(jsonData)
     '''
+
+good = r107s['feedback']
+print("test",good)
+# Fake dataset
+height = [1,10,2]
+bars = ('BAD FEEDBACK','GOOD FEEDBACK','SOS SIGNAL')
+y_pos = np.arange(len(bars))
+ 
+# Create bars and choose color
+plt.bar(y_pos, height, color = (0.5,0.1,0.5,0.6))
+ 
+# Add title and axis names
+plt.title('DATA ANALYSIS')
+plt.xlabel('SIGNALS')
+plt.ylabel('COUNT')
+ 
+# Limits for the Y axis
+plt.ylim(0,60)
+ 
+# Create names
+plt.xticks(y_pos, bars)
+ 
+# Show graphic
+plt.show()

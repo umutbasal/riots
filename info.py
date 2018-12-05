@@ -24,4 +24,3 @@ class MetaData:
       
   def send(self):
     self.dataFile({ "time": time.time(), "location": self.location, "photo": self.photo, "feedback": self.feedback, "description": self.description, "sensors": self.sensors })
-
