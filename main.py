@@ -2,23 +2,6 @@
 # -*- coding: utf-8 -*-
 
 from info import MetaData
-print('''
- (   (       )        (     
- )\ ))\ ) ( /(   *   ))\ )  
-(()/(()/( )\())` )  /(()/(  
- /(_))(_)|(_)\  ( )(_))(_)) 
-(_))(_))   ((_)(_(_()|_))   
-| _ \_ _| / _ \|_   _/ __|  
-|   /| | | (_) | | | \__ \  
-|_|_\___| \___/  |_| |___/  
-                                                        
-       '''
-       # Data Sender
-
-  )
-
-
-
 
 def goodReport():
 	goodReport = MetaData("23.888888,4.333333", "IntecBrussel.jpg", "GOOD ROAD","This road is recommended", "[12.00, 3.04, 6.205]")
@@ -39,7 +22,20 @@ def sosSignal():
 
 
 def main():
+	print('''
+	 (   (       )        (     
+	 )\ ))\ ) ( /(   *   ))\ )  
+	(()/(()/( )\())` )  /(()/(  
+	 /(_))(_)|(_)\  ( )(_))(_)) 
+	(_))(_))   ((_)(_(_()|_))   
+	| _ \_ _| / _ \|_   _/ __|  
+	|   /| | | (_) | | | \__ \  
+	|_|_\___| \___/  |_| |___/  
+	                                                        
+	       '''
+	       # Data Sender
 
+	  )
 	user = input("[1] - Send good feedback\n[2] - Send bad feedback\n[3] - Send SOS Signal")
 	if user == 1:
 		print("Pressed button! the road is good.")
@@ -57,4 +53,5 @@ def main():
   #first_photo.send()
 
 if __name__ == "__main__":
+	
   main()
