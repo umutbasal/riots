@@ -53,5 +53,5 @@ def main():
   #first_photo.send()
 
 if __name__ == "__main__":
-	
-  main()
+	while True:
+		main()
