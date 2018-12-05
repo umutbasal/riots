@@ -36,7 +36,7 @@ def main():
 	       # Data Sender
 
 	  )
-	user = input("[1] - Send good feedback\n[2] - Send bad feedback\n[3] - Send SOS Signal")
+	user = input("[1] - Send good feedback\n[2] - Send bad feedback\n[3] - Send SOS Signal\n ~$ ")
 	if user == 1:
 		print("Pressed button! the road is good.")
 		goodReport()
