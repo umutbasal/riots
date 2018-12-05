@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# https://github.com/Twilliamson90/Marker-Filtering-Google-Maps
 import json
 import time
 print('''
