@@ -2,20 +2,7 @@
 # -*- coding: utf-8 -*-
 import json
 import time
-print('''
- (    (        )         (     
- )\ ) )\ )  ( /(   *   ) )\ )  
-(()/((()/(  )\())` )  /((()/(  
- /(_))/(_))((_)\  ( )(_))/(_)) 
-(_)) (_))    ((_)(_(_())(_))   
-| _ \|_ _|  / _ \|_   _|/ __|  
-|   / | |  | (_) | | |  \__ \  
-|_|_\|___|  \___/  |_|  |___/  
-                               
-       '''
-       # UML Schema
-
-  )
+# UML Schema
 class MetaData:
   def __init__(self, location, photo, feedback,description, sensors):
     self.location = location
