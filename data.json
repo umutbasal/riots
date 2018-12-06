@@ -1,31 +1,82 @@
-[
-  {
-    "user_id": 1,
-    "description": "911 SIGNAL",
+[  {
+    "user_id": 10,
+    "description": "This road is recommended",
     "photo": "IntecBrussel.jpg",
     "location": "23.888888,4.333333",
-    "time": 1544092008.196717,
+    "time": 1544093183.492949,
     "sensors": {
       "light_sensor": [
-        1,
-        2,
-        3
+        10.1,
+        43.4,
+        12.0
       ],
       "ultrasonic_sensor": [
-        1,
-        2,
-        3
+        10.1,
+        43.4,
+        12.0
       ],
       "accelerometer": [
-        1,
-        2,
-        3
+        10.1,
+        43.4,
+        12.0
       ]
     },
     "feedback": {
-      "sos_signal": [
-        "sos"
+      "goodfeedback": "goodfeedback"
+    }
+  },
+  {
+    "user_id": 11,
+    "description": "This road is not recommended",
+    "photo": "IntecBrussel.jpg",
+    "location": "23.888888,4.333333",
+    "time": 1544093184.101047,
+    "sensors": {
+      "light_sensor": [
+        10.1,
+        43.4,
+        12.0
+      ],
+      "ultrasonic_sensor": [
+        10.1,
+        43.4,
+        12.0
+      ],
+      "accelerometer": [
+        10.1,
+        43.4,
+        12.0
       ]
+    },
+    "feedback": {
+      "badfeedback": "badfeedback"
+    }
+  },
+  {
+    "user_id": 12,
+    "description": "911 SIGNAL",
+    "photo": "IntecBrussel.jpg",
+    "location": "23.888888,4.333333",
+    "time": 1544093184.517033,
+    "sensors": {
+      "light_sensor": [
+        10.1,
+        43.4,
+        12.0
+      ],
+      "ultrasonic_sensor": [
+        10.1,
+        43.4,
+        12.0
+      ],
+      "accelerometer": [
+        10.1,
+        43.4,
+        12.0
+      ]
+    },
+    "feedback": {
+      "sos_signal": "sos"
     }
   }
 ]

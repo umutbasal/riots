@@ -34,19 +34,14 @@ for r107s in r107sData:
     ultrasonic = len(r107s['sensors']['ultrasonic_sensor'])
     acce = len(r107s['sensors']['accelerometer'])
     light = len(r107s['sensors']['light_sensor'])
-    goodfeedback = len(r107s['feedback']['goodfeedback'][0])
-    badfeedback = len(r107s['feedback']['badfeedback'][0])
-    sos = len(r107s['feedback']['sos_signal'][0])
-'''
-jsonData = json.dumps(data_item, sort_keys=True, indent=5)
-    JSON CODE FORMATTER
-    #print json.dumps(data_item, sort_keys=True, indent=5)
-    data = json.loads(jsonData)
-    '''
-print (sos)
+    print(r107s['sensors']['ultrasonic_sensor'][0])
+    print(r107s[0]['feedback'])
+    #print(r107s['feedback'][0])
+
+
 
 # Fake dataset
-height = [1,10,2]
+height = [r107s['sensors']['ultrasonic_sensor'][0],r107s['sensors']['ultrasonic_sensor'][1],r107s['sensors']['ultrasonic_sensor'][2]]
 bars = ('BAD FEEDBACK','GOOD FEEDBACK','SOS SIGNAL')
 y_pos = np.arange(len(bars))
  
