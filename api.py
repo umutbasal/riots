@@ -27,6 +27,9 @@ for r107s in r107sData:
     print("Location", r107s['location'])
     print("Sensors", r107s['sensors'])
     print("Time", r107s['time'])
+    print("UltraSonic Sensor", r107s['sensors']['ultrasonic_sensor'])
+    print("Accelerometer", r107s['sensors']['accelerometer'])
+    print("Light Sensor", r107s['sensors']['light_sensor'])
     
 '''
 jsonData = json.dumps(data_item, sort_keys=True, indent=5)
