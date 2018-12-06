@@ -1,27 +1,31 @@
 [
   {
     "user_id": 1,
-    "description": "This road is not recommended",
+    "description": "911 SIGNAL",
     "photo": "IntecBrussel.jpg",
     "location": "23.888888,4.333333",
-    "time": 1544028714.604,
+    "time": 1544092008.196717,
     "sensors": {
+      "light_sensor": [
+        1,
+        2,
+        3
+      ],
       "ultrasonic_sensor": [
-        10.1,
-        12.3,
-        50.2
+        1,
+        2,
+        3
       ],
       "accelerometer": [
-        10.1,
-        12.3,
-        50.2
-      ],
-      "light_sensor": [
-        10.1,
-        12.3,
-        50.2
+        1,
+        2,
+        3
       ]
     },
-    "feedback": "BAD ROAD"
+    "feedback": {
+      "sos_signal": [
+        "sos"
+      ]
+    }
   }
 ]

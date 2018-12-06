@@ -2,19 +2,25 @@
 # -*- coding: utf-8 -*-
 
 from info import MetaData
-
+from time import sleep
 def goodReport():
-	goodReport = MetaData("23.888888,4.333333", "IntecBrussel.jpg", "GOOD ROAD","This road is recommended", {"sensor1":[1,2,3],"sensor2":[1,2,3],"sensor3":[1,2,3]})
+	goodReport = MetaData("23.888888,4.333333", "IntecBrussel.jpg", {"goodfeedback":["good feedback"]},"This road is recommended", {"ultrasonic_sensor":[1,2,3],"accelerometer":[1,2,3],"light_sensor":[1,2,3]})
 	goodReport.send()
 
 def badReport():
-	badReport = MetaData("23.888888,4.333333", "IntecBrussel.jpg", "BAD ROAD","This road is not recommended", {"sensor1":[1,2,3],"sensor2":[1,2,3],"sensor3":[1,2,3]})
+	badReport = MetaData("23.888888,4.333333", "IntecBrussel.jpg", {"badfeedback":["bad feedback"]},"This road is not recommended", {"ultrasonic_sensor":[1,2,3],"accelerometer":[1,2,3],"light_sensor":[1,2,3]})
 	badReport.send()
 
 
 def sosSignal():
-	sos = MetaData("23.888888,4.333333", "IntecBrussel.jpg", "SOS","911 SIGNAL", {"sensor1":[1,2,3],"sensor2":[1,2,3],"sensor3":[1,2,3]})
+	sos = MetaData("23.888888,4.333333", "IntecBrussel.jpg", {"sos_signal":["sos"]},"911 SIGNAL", {"ultrasonic_sensor":[1,2,3],"accelerometer":[1,2,3],"light_sensor":[1,2,3]})
 	sos.send()
+	print("Calling to 112...")
+	sleep(1)
+	print("Session started")
+	sleep(1)
+	print("Talk now!...☏")
+	sleep(60)
 	'''
 	need to call hospital or police here by [press button(sos)] [session started]
 	and then hang up the phone call by press button[sos]
