@@ -1,7 +1,7 @@
 import json, ast
 from pprint import pprint
-import numpy as np
-import matplotlib.pyplot as plt
+#import numpy as np
+#import matplotlib.pyplot as plt
 import pprint
 print('''
  (   (       )        (     
@@ -17,25 +17,25 @@ print('''
        # JSON DATA
 
   )
+def count(list, feedback):
+  with open(list, "r") as file:
+    decodeJson = json.loads(file.read())
+    result = 0
+    for data in decodeJson:
+      if (data["feedback"] == feedback):
+        result +=1
+    return result
 
-def find(key, dictionary):
-    for k, v in dictionary.iteritems():
-        if k == key:
-            yield v
-        elif isinstance(v, dict):
-            for result in find(key, v):
-                yield result
-        elif isinstance(v, list):
-            for d in v:
-                for result in find(key, d):
-                    yield result
+print("How many SOS: ", count("data.json", "SOS"),"\n")
+print("How many GOOD FEEDBACK: ", count("data.json", "GOOD"),"\n")
+print("How many BAD FEEDBACK: ", count("data.json", "BAD"),"\n")
 
 #HowManyRecords = input("How many records would you like to see? ex[1-100] ")
 with open('data.json', 'r') as f:
 
     r107sData = json.load(f)
     CleanData = ast.literal_eval(json.dumps(r107sData))
-  
+
 
 
 for r107s in CleanData:
@@ -51,10 +51,10 @@ for r107s in CleanData:
     ultrasonic = len(r107s['sensors']['ultrasonic_sensor'])
     acce = len(r107s['sensors']['accelerometer'])
     light = len(r107s['sensors']['light_sensor'])
-    
+    #print(r107s['feedback'])
+    #str = 'Number of users = {0}'.format(len(r107s))
 
     #print(r107s['feedback'][0])
-    
 
     print("\n")
     #print(r107s['sensors']['ultrasonic_sensor'][0])
@@ -62,7 +62,7 @@ for r107s in CleanData:
 
 
 
-
+'''
 # Fake dataset
 height = [r107s['sensors']['ultrasonic_sensor'][0],r107s['sensors']['ultrasonic_sensor'][1],r107s['sensors']['ultrasonic_sensor'][2]]
 bars = ('VALUE1','VALUE2','VALUE3')
@@ -84,3 +84,4 @@ plt.xticks(y_pos, bars)
  
 # Show graphic
 #plt.show()
+'''

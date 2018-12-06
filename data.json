@@ -1,1 +1,338 @@
-[{"user_id": 14, "description": "911 SIGNAL", "photo": "IntecBrussel.jpg", "location": "23.888888,4.333333", "time": 1544100649.622464, "sensors": {"light_sensor": [1, 2, 3], "ultrasonic_sensor": [1, 2, 3], "accelerometer": [1, 2, 3]}, "feedback": {"sos_signal": "S0s Signal"}}, {"user_id": 15, "description": "This road is recommended", "photo": "IntecBrussel.jpg", "location": "23.888888,4.333333", "time": 1544103263.815238, "sensors": {"light_sensor": [1, 2, 3], "ultrasonic_sensor": [1, 2, 3], "accelerometer": [1, 2, 3]}, "feedback": {"goodfeedback": "Good feedback"}}, {"user_id": 16, "description": "This road is not recommended", "photo": "IntecBrussel.jpg", "location": "23.888888,4.333333", "time": 1544103264.103128, "sensors": {"light_sensor": [1, 2, 3], "ultrasonic_sensor": [1, 2, 3], "accelerometer": [1, 2, 3]}, "feedback": {"badfeedback": "Bad feedback"}}, {"user_id": 17, "description": "911 SIGNAL", "photo": "IntecBrussel.jpg", "location": "23.888888,4.333333", "time": 1544103264.615252, "sensors": {"light_sensor": [1, 2, 3], "ultrasonic_sensor": [1, 2, 3], "accelerometer": [1, 2, 3]}, "feedback": {"sos_signal": "S0s Signal"}}]
+[
+  {
+    "user_id": 0,
+    "feedback": "SOS",
+    "photo": "hey.jpg",
+    "location": "50.888888,4.333333",
+    "time": 1544125546.256,
+    "sensors": {
+      "ultrasonic_sensor": [
+        12,
+        3.04,
+        6.205
+      ],
+      "accelerometer": [
+        1.02,
+        1.4,
+        2.5
+      ],
+      "light_sensor": [
+        2,
+        3.4,
+        6.5
+      ]
+    }
+  },
+  {
+    "user_id": 1,
+    "feedback": "SOS",
+    "photo": "hey.jpg",
+    "location": "50.888888,4.333333",
+    "time": 1544125552.512,
+    "sensors": {
+      "ultrasonic_sensor": [
+        12,
+        3.04,
+        6.205
+      ],
+      "accelerometer": [
+        1.02,
+        1.4,
+        2.5
+      ],
+      "light_sensor": [
+        2,
+        3.4,
+        6.5
+      ]
+    }
+  },
+  {
+    "user_id": 2,
+    "feedback": "SOS",
+    "photo": "hey.jpg",
+    "location": "50.888888,4.333333",
+    "time": 1544125553.795,
+    "sensors": {
+      "ultrasonic_sensor": [
+        12,
+        3.04,
+        6.205
+      ],
+      "accelerometer": [
+        1.02,
+        1.4,
+        2.5
+      ],
+      "light_sensor": [
+        2,
+        3.4,
+        6.5
+      ]
+    }
+  },
+  {
+    "user_id": 3,
+    "feedback": "GOOD",
+    "photo": "hey.jpg",
+    "location": "50.888888,4.333333",
+    "time": 1544125564.763,
+    "sensors": {
+      "ultrasonic_sensor": [
+        12,
+        3.04,
+        6.205
+      ],
+      "accelerometer": [
+        1.02,
+        1.4,
+        2.5
+      ],
+      "light_sensor": [
+        2,
+        3.4,
+        6.5
+      ]
+    }
+  },
+  {
+    "user_id": 4,
+    "feedback": "GOOD",
+    "photo": "hey.jpg",
+    "location": "50.888888,4.333333",
+    "time": 1544125566.372,
+    "sensors": {
+      "ultrasonic_sensor": [
+        12,
+        3.04,
+        6.205
+      ],
+      "accelerometer": [
+        1.02,
+        1.4,
+        2.5
+      ],
+      "light_sensor": [
+        2,
+        3.4,
+        6.5
+      ]
+    }
+  },
+  {
+    "user_id": 5,
+    "feedback": "GOOD",
+    "photo": "hey.jpg",
+    "location": "50.888888,4.333333",
+    "time": 1544125568.233,
+    "sensors": {
+      "ultrasonic_sensor": [
+        12,
+        3.04,
+        6.205
+      ],
+      "accelerometer": [
+        1.02,
+        1.4,
+        2.5
+      ],
+      "light_sensor": [
+        2,
+        3.4,
+        6.5
+      ]
+    }
+  },
+  {
+    "user_id": 6,
+    "feedback": "GOOD",
+    "photo": "hey.jpg",
+    "location": "50.888888,4.333333",
+    "time": 1544125571.115,
+    "sensors": {
+      "ultrasonic_sensor": [
+        12,
+        3.04,
+        6.205
+      ],
+      "accelerometer": [
+        1.02,
+        1.4,
+        2.5
+      ],
+      "light_sensor": [
+        2,
+        3.4,
+        6.5
+      ]
+    }
+  },
+  {
+    "user_id": 7,
+    "feedback": "GOOD",
+    "photo": "hey.jpg",
+    "location": "50.888888,4.333333",
+    "time": 1544125572.248,
+    "sensors": {
+      "ultrasonic_sensor": [
+        12,
+        3.04,
+        6.205
+      ],
+      "accelerometer": [
+        1.02,
+        1.4,
+        2.5
+      ],
+      "light_sensor": [
+        2,
+        3.4,
+        6.5
+      ]
+    }
+  },
+  {
+    "user_id": 8,
+    "feedback": "BAD",
+    "photo": "hey.jpg",
+    "location": "50.888888,4.333333",
+    "time": 1544125575.613,
+    "sensors": {
+      "ultrasonic_sensor": [
+        12,
+        3.04,
+        6.205
+      ],
+      "accelerometer": [
+        1.02,
+        1.4,
+        2.5
+      ],
+      "light_sensor": [
+        2,
+        3.4,
+        6.5
+      ]
+    }
+  },
+  {
+    "user_id": 9,
+    "feedback": "BAD",
+    "photo": "hey.jpg",
+    "location": "50.888888,4.333333",
+    "time": 1544125866.035,
+    "sensors": {
+      "ultrasonic_sensor": [
+        12,
+        3.04,
+        6.205
+      ],
+      "accelerometer": [
+        1.02,
+        1.4,
+        2.5
+      ],
+      "light_sensor": [
+        2,
+        3.4,
+        6.5
+      ]
+    }
+  },
+  {
+    "user_id": 10,
+    "feedback": "BAD",
+    "photo": "hey.jpg",
+    "location": "50.888888,4.333333",
+    "time": 1544126610.485,
+    "sensors": {
+      "ultrasonic_sensor": [
+        12,
+        3.04,
+        6.205
+      ],
+      "accelerometer": [
+        1.02,
+        1.4,
+        2.5
+      ],
+      "light_sensor": [
+        2,
+        3.4,
+        6.5
+      ]
+    }
+  },
+  {
+    "user_id": 11,
+    "feedback": "BAD",
+    "photo": "hey.jpg",
+    "location": "50.888888,4.333333",
+    "time": 1544126621.334,
+    "sensors": {
+      "ultrasonic_sensor": [
+        12,
+        3.04,
+        6.205
+      ],
+      "accelerometer": [
+        1.02,
+        1.4,
+        2.5
+      ],
+      "light_sensor": [
+        2,
+        3.4,
+        6.5
+      ]
+    }
+  },
+  {
+    "user_id": 12,
+    "feedback": "BAD",
+    "photo": "hey.jpg",
+    "location": "50.888888,4.333333",
+    "time": 1544126678.853,
+    "sensors": {
+      "ultrasonic_sensor": [
+        12,
+        3.04,
+        6.205
+      ],
+      "accelerometer": [
+        1.02,
+        1.4,
+        2.5
+      ],
+      "light_sensor": [
+        2,
+        3.4,
+        6.5
+      ]
+    }
+  },
+  {
+    "user_id": 13,
+    "feedback": "BAD",
+    "photo": "hey.jpg",
+    "location": "50.888888,4.333333",
+    "time": 1544126734.884,
+    "sensors": {
+      "ultrasonic_sensor": [
+        12,
+        3.04,
+        6.205
+      ],
+      "accelerometer": [
+        1.02,
+        1.4,
+        2.5
+      ],
+      "light_sensor": [
+        2,
+        3.4,
+        6.5
+      ]
+    }
+  }
+]
