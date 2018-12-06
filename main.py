@@ -4,16 +4,16 @@
 from info import MetaData
 from time import sleep
 def goodReport():
-	goodReport = MetaData("23.888888,4.333333", "IntecBrussel.jpg", {"goodfeedback":"Good feedback"},"This road is recommended", {"ultrasonic_sensor":[1,2,3],"accelerometer":[1,2,3],"light_sensor":[1,2,3]})
+	goodReport = MetaData("23.888888,4.333333", "IntecBrussel.jpg", "Good Feedback", "This road is recommended", {"ultrasonic_sensor":[1,2,3],"accelerometer":[1,2,3],"light_sensor":[1,2,3]})
 	goodReport.send()
 
 def badReport():
-	badReport = MetaData("23.888888,4.333333", "IntecBrussel.jpg", {"badfeedback":"Bad feedback"},"This road is not recommended", {"ultrasonic_sensor":[1,2,3],"accelerometer":[1,2,3],"light_sensor":[1,2,3]})
+	badReport = MetaData("23.888888,4.333333", "IntecBrussel.jpg", "Bad Feedback","This road is not recommended", {"ultrasonic_sensor":[1,2,3],"accelerometer":[1,2,3],"light_sensor":[1,2,3]})
 	badReport.send()
 
 
 def sosSignal():
-	sos = MetaData("23.888888,4.333333", "IntecBrussel.jpg", {"sos_signal":"S0s Signal"},"911 SIGNAL", {"ultrasonic_sensor":[1,2,3],"accelerometer":[1,2,3],"light_sensor":[1,2,3]})
+	sos = MetaData("23.888888,4.333333", "IntecBrussel.jpg", "Sos Signal","911 SIGNAL", {"ultrasonic_sensor":[1,2,3],"accelerometer":[1,2,3],"light_sensor":[1,2,3]})
 	sos.send()
 	print("Calling to 112...")
 	sleep(1)
@@ -55,8 +55,6 @@ def main():
 	else:
 		print("init 0")
 
-  #first_photo = MetaData("23.888888,4.333333", "IntecBrussel.jpg", "BAD[fordrink]","This road is not recommended", [12.00, 3.04, 6.205])
-  #first_photo.send()
 
 if __name__ == "__main__":
 	while True:
