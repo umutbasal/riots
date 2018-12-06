@@ -1,4 +1,4 @@
-import json
+import json, ast
 from pprint import pprint
 import numpy as np
 import matplotlib.pyplot as plt
@@ -17,12 +17,29 @@ print('''
        # JSON DATA
 
   )
+
+def find(key, dictionary):
+    for k, v in dictionary.iteritems():
+        if k == key:
+            yield v
+        elif isinstance(v, dict):
+            for result in find(key, v):
+                yield result
+        elif isinstance(v, list):
+            for d in v:
+                for result in find(key, d):
+                    yield result
+
 #HowManyRecords = input("How many records would you like to see? ex[1-100] ")
 with open('data.json', 'r') as f:
+
     r107sData = json.load(f)
+    CleanData = ast.literal_eval(json.dumps(r107sData))
+  
 
-for r107s in r107sData:
 
+for r107s in CleanData:
+    
     print("User Id" , r107s['user_id'])
     print("FeedBack", r107s['feedback'])
     print("Location", r107s['location'])
@@ -34,15 +51,21 @@ for r107s in r107sData:
     ultrasonic = len(r107s['sensors']['ultrasonic_sensor'])
     acce = len(r107s['sensors']['accelerometer'])
     light = len(r107s['sensors']['light_sensor'])
-    print(r107s['sensors']['ultrasonic_sensor'][0])
-    print(r107s[0]['feedback'])
+    
+
     #print(r107s['feedback'][0])
+    
+
+    print("\n")
+    #print(r107s['sensors']['ultrasonic_sensor'][0])
+    #print(r107s['feedback'][0])
+
 
 
 
 # Fake dataset
 height = [r107s['sensors']['ultrasonic_sensor'][0],r107s['sensors']['ultrasonic_sensor'][1],r107s['sensors']['ultrasonic_sensor'][2]]
-bars = ('BAD FEEDBACK','GOOD FEEDBACK','SOS SIGNAL')
+bars = ('VALUE1','VALUE2','VALUE3')
 y_pos = np.arange(len(bars))
  
 # Create bars and choose color
@@ -60,4 +83,4 @@ plt.ylim(0,60)
 plt.xticks(y_pos, bars)
  
 # Show graphic
-plt.show()
+#plt.show()
