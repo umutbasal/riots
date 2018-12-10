@@ -1,5 +1,5 @@
-{
-    "user_id": 1,
+[{
+    "user_id": 0,
     "description": "This is a SOS signal",
     "photo": "/home/pi/riots/PiCameraRecords/2018-12-10 15:16:04.jpg",
     "location": {
@@ -30,3 +30,4 @@
     },
     "feedback": "SOS Signal"
   }
+]
