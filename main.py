@@ -1,35 +1,44 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+from picamera import PiCamera
 from info import MetaData
 from time import sleep
 import datetime
+import datetime as dt
 import time
 import json
 import base64
-
+import os
 '''left_button = Button(23)
 right_button = Button(24)
 camera = PiCamera()
 '''
+camera = PiCamera()
 
-def get_file_name():
-    a=  datetime.datetime.now().strftime("%Y-%m-%d_%H.%M.%S.jpg")
-    
-    return a
+cwd = os.getcwd()
+
+def capture():
+    picTime = dt.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    picName = picTime + '.jpg'
+    path = cwd + '/PiCameraRecords/' + picName
+    camera.capture(path)
+    return path
+
+print(capture())
 
 def goodReport():
-	goodReport = MetaData({"lat":[23.888888],"lng":[4.333333]}, "fileName", "Good Feedback", "This road is recommended", {"ultrasonic_sensor":[1,2,3],"accelerometer":[1,2,3],"light_sensor":[1,2,3]})
+	goodReport = MetaData({"lat":[23.888888],"lng":[4.333333]}, capture(), "Good Feedback", "This road is recommended", {"ultrasonic_sensor":[1,2,3],"accelerometer":[1,2,3],"light_sensor":[1,2,3]})
 	goodReport.send()
 
 def badReport():
-	badReport = MetaData({"lat":[23.888888],"lng":[4.333333]}, "IntecBrussel.jpg", "Bad Feedback","This road is not recommended", {"ultrasonic_sensor":[1,2,3],"accelerometer":[1,2,3],"light_sensor":[1,2,3]})
-	badReport.send()
+	badReport = MetaData({"lat":[23.888888],"lng":[4.333333]}, capture(), "Bad Feedback", "This road is not recommended", {"ultrasonic_sensor":[1,2,3],"accelerometer":[1,2,3],"light_sensor":[1,2,3]})
+
+        badReport.send()
 
 
 def sosSignal():
-	sos = MetaData({"lat":[23.888888],"lng":[4.333333]}, "IntecBrussel.jpg", "Sos Signal","911 SIGNAL", {"ultrasonic_sensor":[1,2,3],"accelerometer":[1,2,3],"light_sensor":[1,2,3]})
-	sos.send()
+	sos = MetaData({"lat":[23.888888],"lng":[4.333333]}, capture(), "SOS Signal", "This is a SOS signal", {"ultrasonic_sensor":[1,2,3],"accelerometer":[1,2,3],"light_sensor":[1,2,3]})
+        sos.send()
 	print("Calling to 112...")
 	sleep(1)
 	print("Session started")

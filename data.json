@@ -1,1 +1,32 @@
-[{"user_id": 0, "feedback": "SOS", "photo": "hey.jpg", "location": {"lat": 4.40333, "lng": 50.888888}, "time": 1544125546.256, "sensors": {"light_sensor": [2, 3.4, 6.5], "ultrasonic_sensor": [12, 3.04, 6.205], "accelerometer": [1.02, 1.4, 2.5]}}, {"user_id": 1, "description": "911 SIGNAL", "photo": "IntecBrussel.jpg", "location": {"lat": [23.888888], "lng": [4.333333]}, "time": 1544447390.021829, "sensors": {"light_sensor": [1, 2, 3], "ultrasonic_sensor": [1, 2, 3], "accelerometer": [1, 2, 3]}, "feedback": "Sos Signal"}, {"user_id": 2, "description": "This road is recommended", "photo": "fileName", "location": {"lat": [23.888888], "lng": [4.333333]}, "time": 1544447392.309945, "sensors": {"light_sensor": [1, 2, 3], "ultrasonic_sensor": [1, 2, 3], "accelerometer": [1, 2, 3]}, "feedback": "Good Feedback"}, {"user_id": 3, "description": "This road is not recommended", "photo": "IntecBrussel.jpg", "location": {"lat": [23.888888], "lng": [4.333333]}, "time": 1544447392.7418, "sensors": {"light_sensor": [1, 2, 3], "ultrasonic_sensor": [1, 2, 3], "accelerometer": [1, 2, 3]}, "feedback": "Bad Feedback"}]
+{
+    "user_id": 1,
+    "description": "This is a SOS signal",
+    "photo": "/home/pi/riots/PiCameraRecords/2018-12-10 15:16:04.jpg",
+    "location": {
+      "lat": [
+        23.888888
+      ],
+      "lng": [
+        4.333333
+      ]
+    },
+    "time": 1544451365.400573,
+    "sensors": {
+      "light_sensor": [
+        1,
+        2,
+        3
+      ],
+      "ultrasonic_sensor": [
+        1,
+        2,
+        3
+      ],
+      "accelerometer": [
+        1,
+        2,
+        3
+      ]
+    },
+    "feedback": "SOS Signal"
+  }
