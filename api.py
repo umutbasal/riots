@@ -4,13 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pprint
 print('''
-██████╗ ██╗ ██████╗ ████████╗███████╗
-██╔══██╗██║██╔═══██╗╚══██╔══╝██╔════╝
-██████╔╝██║██║   ██║   ██║   ███████╗
-██╔══██╗██║██║   ██║   ██║   ╚════██║
-██║  ██║██║╚██████╔╝   ██║   ███████║
-╚═╝  ╚═╝╚═╝ ╚═════╝    ╚═╝   ╚══════╝
-                                                                                  
+
+
        '''
        # JSON DATA
 
@@ -56,6 +51,25 @@ for r107s in CleanData:
     #str = 'Number of users = {0}'.format(len(r107s))
     print("\n")
 
+
+
+
+def graphicMaker(value1,value2,value3,graphicName):
+    height = value1,value2,value3
+    bars = (str(value1),str(value2),str(value3))
+    y_pos = np.arange(len(bars))
+    plt.bar(y_pos,height, color = (0.5,0.1,0.5,0.6))
+    plt.title('DATA ANALYSIS')
+    plt.xlabel('VALUES')
+    plt.ylabel('COUNT')
+    plt.ylim(0,60)
+    plt.xticks(y_pos,bars)
+    plt.savefig(graphicName)
+
+
+graphicMaker(sos,good,bad,'test.png')
+
+'''
 # Fake dataset
 
 # Sensors values stats
@@ -80,6 +94,8 @@ plt.ylim(0,60)
  
 # Create names
 plt.xticks(y_pos, bars)
- 
+plt.savefig('stats.png')
 # Show graphic
-plt.show()
+
+
+'''
