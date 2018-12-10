@@ -36,10 +36,11 @@ with open('data.json', 'r') as f:
 
 
 for r107s in CleanData:
-    
+    # Latitude and Longitude 
     print("User Id" , r107s['user_id'])
     print("FeedBack", r107s['feedback'])
-    print("Location", r107s['location'])
+    print("Location Latitude", r107s['location']['lat'])
+    print("Location Longitude", r107s['location']['lng'])
     print("Sensors", r107s['sensors'])
     print("Time", r107s['time'])
     print("UltraSonic Sensor", r107s['sensors']['ultrasonic_sensor'])
@@ -54,9 +55,10 @@ for r107s in CleanData:
 
 
 
+
 def graphicMaker(value1,value2,value3,graphicName):
     height = value1,value2,value3
-    bars = (str(value1),str(value2),str(value3))
+    bars = ('ultrasonic','accelerometer','light_sensor')
     y_pos = np.arange(len(bars))
     plt.bar(y_pos,height, color = (0.5,0.1,0.5,0.6))
     plt.title('DATA ANALYSIS')
