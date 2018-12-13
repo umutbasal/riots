@@ -11,7 +11,11 @@ class MetaData:
     self.description = description
     self.sensors = sensors
     self.db = "data.json"
+
   def dataFile(self, data):
+    """
+    Write Json data to the file
+    """
     with open(self.db, 'r') as file:
       decodedFile = json.loads(file.read())
       data['user_id'] = decodedFile[-1]['user_id'] + 1 if len(decodedFile) else 0
@@ -23,4 +27,7 @@ class MetaData:
         file.close()
       
   def send(self):
+    """
+    Get json data
+    """
     self.dataFile({ "time": time.time(), "location": self.location, "photo": self.photo, "feedback": self.feedback, "description": self.description, "sensors": self.sensors })
